@@ -1,0 +1,99 @@
+.btn a {
+    position: relative;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(1, 13, 34);
+    color: white;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #359ad8;
+    transform: scaleX(0);
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.btn a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn a span {
+    display: inline-block;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+
+.btn a:hover span {
+    color: #333;
+}
+
+.btn a i {
+    position: relative;
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: yellow;
+    transition: 0.5s, width 0.5s, hight 0.5s;
+    transition-delay: 0s, 0.5s, 0.5s;
+}
+
+.btn a:hover i {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition-delay: 0s, 0.5s, 0.5;
+}
+
+.btn a i::before {
+    content: '';
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    background: transparent;
+    rotate: 0;
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.btn a:hover i::before {
+    background-color: #333;
+    rotate: 45deg;
+    transition-delay: 0.5s;
+}
+
+.btn a i::after {
+    content: '';
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    background: transparent;
+    rotate: 0;
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.btn a:hover i::after {
+    background-color: #333;
+    rotate: -45deg;
+    transition-delay: 0.5s;
+}

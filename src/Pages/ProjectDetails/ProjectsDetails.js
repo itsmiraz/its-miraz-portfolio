@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-
-
+import ButtnCss from "./Button.module.css"
 const ProjectsDetails = () => {
     const data = useLoaderData()
     const { title, image_url, live_web, git_hub, tech, details } = data;
@@ -21,18 +20,23 @@ const ProjectsDetails = () => {
                             {tech.map(t => <p>{t}</p>)}
                         </div>
                     </div>
-                    <div className="flex  my-4">
+                    <div className='flex relative m-2 btn my-4'>
 
-                        <a rel='noreferrer' target='_blank' href={live_web}>
-                            <button type="button" className="px-4 mr-4 py-1 font-semibold rounded dark:bg-gray-100 dark:text-gray-800">Live Link</button>
-
-                        </a>
-                        <a rel='noreferrer' target='_blank' href={git_hub}>     <button type="button" className="px-4 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100">Code Link</button></a>
+                        <div className={`absolute left-0 ${ButtnCss.btn}`}>
+                            <a rel='noreferrer' target='_blank' href={live_web}>
+                                <i></i> <span>Live Site</span>
+                            </a>
+                        </div>
+                        <div className={`absolute right-0 ${ButtnCss.btn}`}>
+                            <a rel='noreferrer' target='_blank' href={live_web}>
+                                <i></i> <span>Code Link</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };
 
