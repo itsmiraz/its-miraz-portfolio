@@ -2,17 +2,209 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+
+
+
+
+
+:root {
+  --black-gradient: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 10.89%,
+      #bef3f5 17.23%,
+      #d3b7df 42.04%,
+      #cc7deb 55.12%,
+      #cf5ce6 71.54%,
+      #953cbe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text_pink_gradient{
+  background: linear-gradient(to right top, #00b3ff, #00a0ff, #4687ff, #8b64ff, #c312eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+.bg-blue-gradient {
+  background: linear-gradient(157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(-168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(153.47deg,
+      rgba(255, 255, 255, 0) -341.94%,
+      #001022 95.11%);
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-color: rgb(46, 118, 250);
+    
+  }
+
+  100% {
+    background: rgb(176, 57, 255);
+    
+  }
+}
+
+.background_glow {
+  width: 100wh;
+  
+  filter: blur(200px);
+  color: #fff;
+  background: linear-gradient(-45deg, rgba(68, 183, 250, 0.952), hsl(347, 100%, 49%), rgb(170, 43, 255), #ff019d);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
+  }
+  @-webkit-keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+      
+    }
+  50% {
+  background-position: 100% 50%
+  }
+  100% {
+  background-position: 0% 50%
+  }
+  }
+  
+  @-moz-keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+    }
+  50% {
+  background-position: 100% 50%
+  }
+  100% {
+  background-position: 0% 50%
+  }
+  }
+  
+  @keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+  
+    }
+  50% {
+  background-position: 100% 50%
+  }
+  100% {
+  background-position: 0% 50%
+  }
+  }
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.white_bg{
+  background-color: rgb(46, 118, 250);
+  filter: blur(200px);
+}
+.blue-pink-gradient{
+  background: rgb(176, 57, 255);
+  filter: blur(400px);
+  
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(64, 0, 255, 0.76) 0%, #33a9fe 100%);
+  filter: blur(200px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(200px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(200px);
 }

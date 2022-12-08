@@ -8,7 +8,7 @@ import { FaAlignLeft, FaRegTimesCircle } from "react-icons/fa";
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className=' shadow-xl bg-gray-900 sticky top-0 text-white items-center md:px-20 px-4 py-2 flex justify-between w-full'>
+        <div className=' shadow-xl bg-gray-900 z-50 sticky top-0 text-white items-center md:px-20 px-4 py-2 flex justify-between w-full'>
 
             <img className='z-50' width={'100px'} src={logo} alt="" />
 
