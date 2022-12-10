@@ -24,19 +24,9 @@ const Header = () => {
                         <Link>About Me</Link>
                     </li>
                     <li className='font-semibold mr-4'>
-                        <Link>Contact</Link>
+                        <a href='#contact'>Contact</a>
                     </li>
-                    <li className='font-semibold mr-4'>
-                        <label htmlFor="Toggle1" className="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100">
-                            <span>Dark</span>
-                            <span className="relative">
-                                <input id="Toggle1" type="checkbox" className="hidden peer" />
-                                <div className="w-8 h-5 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-cyan-400"></div>
-                                <div className="absolute inset-y-0 left-0 w-3 h-3 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
-                            </span>
-                            <span>Light</span>
-                        </label>
-                    </li>
+                  
 
                 </ul>
                 <div onClick={() => setOpen(!open)} className="h-6 ease-in duration-300  text-white w-6 md:hidden" >
