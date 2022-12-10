@@ -9,10 +9,8 @@ const ContactForm = () => {
     const sendEmail = (e) => {
       e.preventDefault();
       const forme = e.target
-  console.log(forme)
       emailjs.sendForm('service_g8r92cr', 'template_2jn8jje', form.current, 'hkpbt1u5XkzDyGz5Q')
         .then((result) => {
-            console.log(result.text);
             toast.success('Email Sent')
             forme.reset()
         }, (error) => {
@@ -21,7 +19,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div id='contact' className='bg-black'>
+        <div id='contact' className='bg-black my-10'>
             <form ref={form} onSubmit={sendEmail} className="container text-white flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
                
             <fieldset className="grid md:grid-cols-2  grid-cols-1 px-20 gap-6 p-6 rounded-md shadow-sm ">
@@ -62,18 +60,9 @@ const ContactForm = () => {
                         </div>
                     </fieldset>
                
-                {/* <label>Name</label>
-                <input type="text"  />
-                <label>Email</label>
-                <input type="email"  />
-                <label>Message</label>
-                <textarea  />
-                <input  /> */}
+               
             </form>
-            {/* <form  action="" >
-                    
-                  
-                </form> */}
+           
         </div>
     );
 };

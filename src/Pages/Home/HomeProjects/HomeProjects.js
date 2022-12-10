@@ -9,7 +9,7 @@ const HomeProjects = () => {
 
     // fetching data from data base
     useEffect(() => {
-        fetch('http://localhost:5000/projects')
+        fetch(' https://its-miraz-server.vercel.app/projects')
             .then(res => res.json())
             .then(data => {
                 setprojects(data)
@@ -54,7 +54,7 @@ const HomeProjects = () => {
             <div className='absolute bottom-40 left-0 z-1 white_bg rounded-full w-[30%] h-[30%]'>
 
             </div>
-            <div className='absolute top-52 right-0 z-1 white_bg rounded-full w-[30%] h-[30%]'>
+            <div className='absolute top-52 right-0 z-1 blue-pink-gradient rounded-full w-[30%] h-[30%]'>
 
             </div>
         </div>

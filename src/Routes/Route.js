@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/projects/:id',
-                loader: ({ params }) => fetch(`http://localhost:5000/projects/${params.id}`),
+                loader: ({ params }) => fetch(` https://its-miraz-server.vercel.app/projects/${params.id}`),
                 element: <ProjectsDetails></ProjectsDetails>
             }
         ]

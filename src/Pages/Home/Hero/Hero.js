@@ -28,7 +28,7 @@ const Hero = () => {
                 />
                 </h3>
                 <Link to={resume} target="_blank" download>
-                    <button downloa className='my-4 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white'>Download My Resume</button>
+                    <button  className='my-4 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white'>Download My Resume</button>
                 </Link>
                 <div className='flex justify-center'>
                     <img className='w-96 ' src={heroImg} alt="" />
