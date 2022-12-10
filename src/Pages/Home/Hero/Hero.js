@@ -2,10 +2,15 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import heroImg from '../../../assets/hero-image/portofolio_image.png'
 import { motion } from "framer-motion"
+import './Hero.css'   
+
+
+
+
 
 const Hero = () => {
     return (
-        <div className='relative '>
+        <div className='relative hero'>
 
 
         <div className='text-center z-10 relative  py-14 '>

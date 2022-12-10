@@ -1,29 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HomeProjectsCard = ({ project }) => {
-    console.log(project);
+const SmallProjectCard = ({ project }) => {
+
     const { _id, title, image_url, live_web, git_hub, tech, details } = project;
+
+
     return (
         <div >
-            <div data-aos-duration="10000" data-aos="zoom-in-up" className=" rounded  bg-slate-800  shadow-2xl ">
-                <div className='cards'><span className='inner'>
-                    <img className='' src={image_url} alt="Shoes" />
+            <div  className=" rounded  bg-slate-800  shadow-2xl ">
+                <div className='cards h-[270px] '><span className='inner'>
+                    <img className='scale-100' src={image_url} alt="Shoes" />
                 </span></div>
                 <div className='p-4'>
-                <div className="z-50 my-4 text-start ">
+                <div className="z-50 my-2 text-start ">
                     <h2 className=" text-2xl font-semibold text-white">{title}</h2>
-                    <p className='w-70'>{details.slice(0, 80)}<Link className='' to={`/projects/${_id}`}>...</Link></p>
+                    <p className=''>{details.slice(0, 80)}<Link className='' to={`/projects/${_id}`}>...</Link></p>
                 </div>
-                <div className='bg-slate-900 my-2 font-semibold text-white  rounded-lg '>
-                    <h2 className='font-semibold text-gray-400 mt-2'>Tech Used</h2>
-                    <div className='grid grid-cols-3 text-gray-400  p-3'>
-
-                        {
-                            tech.map(t => <p>{t}</p>)
-                        }
-                    </div>
-                </div>
+               
                 <div className='text-start text-white flex justify-between'>
                     <Link to={`/projects/${_id}`}>
                         <button type="button" className="px-4 mr-4 py-1 font-semibold rounded border-gray-500 border">Details</button>
@@ -40,4 +34,4 @@ const HomeProjectsCard = ({ project }) => {
     );
 };
 
-export default HomeProjectsCard;
+export default SmallProjectCard;
