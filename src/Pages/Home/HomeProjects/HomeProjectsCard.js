@@ -5,7 +5,7 @@ const HomeProjectsCard = ({ project }) => {
     const { _id, title, image_url, live_web, git_hub, tech, details } = project;
     return (
         <div >
-            <div data-aos-duration="10000" data-aos="zoom-in-up" className=" rounded  bg-slate-800  shadow-2xl ">
+            <div  className=" rounded  bg-[#000916]  shadow-2xl ">
                 <div className='cards h-[570px]'><span className='inner'>
                     <img className='rounded' src={image_url} alt="Shoes" />
                 </span></div>
@@ -14,12 +14,12 @@ const HomeProjectsCard = ({ project }) => {
                     <h2 className=" text-2xl font-semibold text-white">{title}</h2>
                     <p className='w-70'>{details.slice(0, 200)}<Link className='' to={`/projects/${_id}`}>...</Link></p>
                 </div>
-                <div className='bg-slate-900 my-2 p-4 font-semibold text-white  rounded-lg '>
+                <div className='bg-[#000e23] shadow-lg  my-6 p-4 font-semibold text-white  rounded-lg '>
                     <h2 className='font-semibold text-start text-gray-400 my-2'>Tech Used</h2>
                     <div className='grid grid-cols-5 gap-6  text-gray-900  '>
 
                         {
-                            tech.map((t,i) => <p key={i} className='bg-gray-300 shadow-lg rounded-full py-1'>{t}</p>)
+                            tech.map((t,i) => <p key={i} className='bg-gray-300 shadow-lg  text-center rounded-full py-1'>{t}</p>)
                         }
                     </div>
                 </div>

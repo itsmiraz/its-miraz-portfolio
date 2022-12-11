@@ -1,4 +1,4 @@
 .hero{
-    
-    background-image: url('https://i.ibb.co/Qr0B3ct/outrun-neon-dark-background-purple-3840x2160-4523.jpg');
+    backdrop-filter: blur(200px);
+    background-image: url('https://i.ibb.co/b11bkyW/outrun-neon-dark-background-purple-3840x2160-4523.jpg');
 }

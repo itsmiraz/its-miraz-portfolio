@@ -2,29 +2,33 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo/web-logo.png'
 import { FaAlignLeft, FaRegTimesCircle } from "react-icons/fa";
-
+import './Header.css'
 
 
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className=' shadow-xl bg-gray-900 z-50 sticky top-0 text-white items-center md:px-20 px-4 py-2 flex justify-between w-full'>
+        <div className=' shadow-xl header  z-50 sticky top-0 text-white items-center md:px-20 px-4 py-2 flex justify-between w-full'>
 
-            <img className='z-50' width={'100px'} src={logo} alt="" />
+            <img className='z-50 w-[120px]'  src={logo} alt="" />
 
             <div>
-                <ul className={`md:flex right-0 z-0 bg-slate-900 w-full text-white text-center rounded-2xl md:shadow-none shadow-xl pb-2 md:pb-0 justify-center md:static duration-300 ease-linear absolute ${open ? 'top-12' : 'top-[-150px]'}`}>
-                    <li className='font-semibold mr-4'>
+                <ul className={`md:flex right-0 z-0  w-full text-center rounded-2xl md:shadow-none shadow-xl pb-2 md:pb-0 justify-center md:static duration-300 ease-linear absolute ${open ? 'top-12' : 'top-[-150px]'}`}>
+                    <li className='font-semibold text-white    mx-4'>
                         <Link to='/'>Home</Link>
                     </li>
-                    <li className='font-semibold mr-4'>
+                    <li className='font-semibold text-white    mx-4'>
                         <Link to='/projects'>Projects</Link>
                     </li>
-                    <li className='font-semibold mr-4'>
-                        <Link>About Me</Link>
+                    <li className='font-semibold  text-white   mx-4'>
+                     <Link to='aboutme'>About Me</Link>
                     </li>
-                    <li className='font-semibold mr-4'>
-                        <a href='#contact'>Contact</a>
+                    <li className='font-semibold text-white  mx-4'>
+                        {/* <a href='#contact'>Contact</a> */}
+                        <Link to='contact'>Contact</Link>
+                    </li>
+                    <li className='font-semibold text-white    mx-4'>
+                        <Link to='/blogs'>Blogs</Link>
                     </li>
                   
 

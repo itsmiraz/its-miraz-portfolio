@@ -1,41 +1,88 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { ScrollRestoration, useLoaderData } from 'react-router-dom';
 import ButtnCss from "./Button.module.css"
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
+
+
 const ProjectsDetails = () => {
     const data = useLoaderData()
-    const { title, image_url, live_web, git_hub, tech, details } = data;
+    const { title, image_url,screenshots,  live_web, features, git_hub, tech, server, details } = data;
+
+
+   
     return (
-        <div className='bg-gray-900 '>
+        <div className=' px-16 mb-20 relative'>
+            <div className='z-20 relative'>
             <h2 className='text-4xl text-white font-bold text-center py-6'>Project Details</h2>
-            <div className='grid  grid-cols-2 gap-10 py-10 px-20 pb-32'>
+            <div className='grid  grid-cols-2 gap-10 py-4 '>
                 <div data-aos-duration="10000" data-aos="fade-right">
-                    <img className='shadow-2xl rounded-lg' src={image_url} alt="" />
+                    <div className='h-[400px] overflow-hidden my-4 cards'>
+                        <span className='inner'>
+
+                            <img className=' shadow-lg rounded-lg' src={image_url} alt="" />
+
+                        </span>
+                    </div>
+                    <div className='flex gap-x-5 my-5'>
+                        <PhotoProvider>
+                            {screenshots.map((item, index) => (
+                                <PhotoView key={index} src={item}>
+                                    {index < 3 ? <img className='object-cover w-32 h-24 shadow-xl  object-center  rounded-md ' src={item} alt="" /> : undefined}
+                                </PhotoView>
+                            ))}
+                        </PhotoProvider>
+                    </div>
                 </div>
+
                 <div data-aos-duration="10000" data-aos="fade-left">
                     <h1 className='text-4xl font-bold text-white'>{title}</h1>
-                    <p className='text-gray-400 my-4'>{details}</p>
-                    <div className='bg-slate-800 p-3 rounded-lg font-semibold text-center text-white'>
-                        <h1 className="mb-2 text-gray-500 font-bold">Tech Used in This Project</h1>
-                        <div className='grid grid-cols-4' >
-                            {tech.map(t => <p>{t}</p>)}
+                    <div className='my-4'>
+                        <h1 className='font-semibold text-xl my-2  text-white' >Features</h1>
+                        <ul >
+                            {
+                                features.map((fea,i) => <ol key={i}>- {fea}</ol>)
+                            }
+                        </ul>
+                    </div>
+                    <div className='bg-black p-4 my-2 rounded-lg font-semibold text-center text-white'>
+                        <h1 className="mb-2 text-gray-100 text-start font-bold">Tech Used in This Project</h1>
+                        <div className='grid grid-cols-4 gap-4  text-center text-gray-900  '>
+
+                            {
+                                tech.map((t, i) => <p key={i} className='bg-gray-200 text-center shadow-lg rounded-full py-1'>{t}</p>)
+                            }
                         </div>
                     </div>
-                    <div className='flex relative m-2 btn my-4'>
+                    <div className='flex  border-none relative  justify-between my-6'>
 
-                        <div className={`absolute left-0 ${ButtnCss.btn}`}>
+                        <div className={` ${ButtnCss.btn}`}>
                             <a rel='noreferrer' target='_blank' href={live_web}>
                                 <i></i> <span>Live Site</span>
                             </a>
                         </div>
-                        <div className={`absolute right-0 ${ButtnCss.btn}`}>
+                        <div className={` ${ButtnCss.btn}`}>
+                            <a rel='noreferrer' target='_blank' href={git_hub}>
+                                <i></i> <span>Client </span>
+                            </a>
+                        </div>
+                        <div className={` ${ButtnCss.btn}`}>
                             <a rel='noreferrer' target='_blank' href={live_web}>
-                                <i></i> <span>Code Link</span>
+                                <i></i> <span>Server</span>
                             </a>
                         </div>
                     </div>
+                  
                 </div>
             </div>
+            <p className='text-gray-200  my-4'>{details}</p>
+            </div>
 
+            <div className='absolute top-32  left-0 z-10 white_bg rounded-full w-[40%] h-[40%]'>
+
+            </div>
+            <ScrollRestoration></ScrollRestoration>
         </div >
     );
 };

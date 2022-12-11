@@ -8,7 +8,7 @@ const SmallProjectCard = ({ project }) => {
 
     return (
         <div >
-            <div data-aos-duration="10000" data-aos="zoom-in-up" className=" rounded  bg-slate-800  shadow-2xl ">
+            <div  className=" rounded  bg-slate-900  shadow-2xl ">
                 <div className='cards h-[150px] '><span className='inner'>
                     <img className='scale-100 rounded'  src={image_url} alt="Shoes" />
                 </span></div>
