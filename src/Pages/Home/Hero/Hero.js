@@ -36,7 +36,7 @@ const Hero = () => {
             </div>
 
             <motion.div
-                className='absolute bottom-28 right-80 z-1 background_glow rounded-full w-[40%] h-[40%]'>
+                className='absolute bottom-28 left-50 z-1 background_glow rounded-full w-[40%] h-[40%]'>
             </motion.div>
 
         </div>

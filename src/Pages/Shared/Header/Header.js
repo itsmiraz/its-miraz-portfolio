@@ -8,12 +8,12 @@ import './Header.css'
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className=' shadow-xl header  z-50 sticky top-0 text-white items-center md:px-20 px-4 py-2 flex justify-between w-full'>
+        <div className=' shadow-xl header bg-black md:bg-transparent  z-50 sticky top-0 text-white items-center md:px-20 px-4 py-2 flex justify-between w-full'>
 
-            <img className='z-50 w-[120px]'  src={logo} alt="" />
+            <img className='z-50 w-[90px] md:w-[120px]'  src={logo} alt="" />
 
             <div>
-                <ul className={`md:flex right-0 z-0  w-full text-center rounded-2xl md:shadow-none shadow-xl pb-2 md:pb-0 justify-center md:static duration-300 ease-linear absolute ${open ? 'top-12' : 'top-[-150px]'}`}>
+                <ul className={`md:flex bg-black md:bg-transparent right-0 z-0  w-full text-center rounded-2xl md:shadow-none shadow-xl pb-2 md:pb-0 justify-center md:static duration-300 ease-linear absolute ${open ? 'top-12' : 'top-[-150px]'}`}>
                     <li className='font-semibold text-white    mx-4'>
                         <Link to='/'>Home</Link>
                     </li>

@@ -16,17 +16,17 @@ const Projects = () => {
     })
 
     return (
-        <div>
+        <div className='p-4'>
 
-            <div className='relative z-20 my-10'>
-                <div className='flex justify-between px-10'>
+            <div className='relative z-20 my-2 md:my-10'>
+                <div className='flex justify-between px-3 md:px-10'>
                     <p className='App-logo font-semibold text-2xl'>+</p>
-                    <h1 className='text-4xl font-bold text-white'>My All Projects</h1>
+                    <h1 className='text-2xl md:text-4xl font-bold text-white'>My All Projects</h1>
                     <p className='App-logo font-semibold text-2xl'>+</p>
                 </div>
 
 
-                <div className='grid grid-cols-1 gap-10 justify-items-center ml-6 py-10 md:grid-cols-2 lg:grid-cols-3 px-2 md:mx-10'>
+                <div className='grid grid-cols-1 gap-0 gap-y-4 md:gap-y-0 md:gap-10 justify-items-center ml-0 md:ml-6 py-10 md:grid-cols-2 lg:grid-cols-3 px-2 md:mx-10'>
                     <div className='w-full col-span-2'>
                         {
                             isLoading ?
@@ -52,7 +52,7 @@ const Projects = () => {
                         }
 
                     </div>
-                    <div className='grid gap-y-4 grid-cols-1'>
+                    <div className='grid gap-y-4  grid-cols-1'>
                         {
                             isLoading ?
                                 <>
@@ -92,7 +92,7 @@ const Projects = () => {
 
                     </div>
                 </div>
-                <div className='grid md:mx-14 grid-cols-3 gap-5'>
+                <div className='grid md:mx-14 grid-cols-1 md:grid-cols-3 gap-5'>
                     {
                         isLoading ?
                             <>

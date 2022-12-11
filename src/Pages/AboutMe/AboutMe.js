@@ -4,10 +4,10 @@ import image from '../../assets/hero-image/portfolio cover.png'
 const AboutMe = () => {
     return (
         <section id='aboutme' className='relative my-20'>
-        <div className='flex mx-32 relative z-10 flex-col md:flex-row gap-10  justify-between items-center'>
-            <img className='w-[40%]' src={image} alt="" />
+        <div className='flex mx-4 md:mx-32 relative z-10 flex-col md:flex-row gap-10  justify-between items-center'>
+            <img className='w-full md:w-[40%]' src={image} alt="" />
 
-            <div className='w-[50%] mx-auto'>
+            <div className= 'w-full md:w-[50%] mx-auto'>
                 <h1 className='text-start text-4xl text-white my-4  font-bold'>About Me</h1>
 
                 <p className=' text-white font-semibold mx-auto'>

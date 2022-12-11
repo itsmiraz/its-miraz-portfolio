@@ -6,7 +6,7 @@ const HomeProjectsCard = ({ project }) => {
     return (
         <div >
             <div  className=" rounded  bg-[#000916]  shadow-2xl ">
-                <div className='cards h-[570px]'><span className='inner'>
+                <div className='cards h-full md:h-[570px]'><span className='inner'>
                     <img className='rounded' src={image_url} alt="Shoes" />
                 </span></div>
                 <div className='p-4'>
@@ -16,7 +16,7 @@ const HomeProjectsCard = ({ project }) => {
                 </div>
                 <div className='bg-[#000e23] shadow-lg  my-6 p-4 font-semibold text-white  rounded-lg '>
                     <h2 className='font-semibold text-start text-gray-400 my-2'>Tech Used</h2>
-                    <div className='grid grid-cols-5 gap-6  text-gray-900  '>
+                    <div className='grid grid-cols-2  md:grid-cols-5 gap-6  text-gray-900  '>
 
                         {
                             tech.map((t,i) => <p key={i} className='bg-gray-300 shadow-lg  text-center rounded-full py-1'>{t}</p>)

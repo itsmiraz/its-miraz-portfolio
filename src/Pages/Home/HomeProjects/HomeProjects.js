@@ -17,7 +17,7 @@ const HomeProjects = () => {
     })
 
     return (
-        <div className='text-center relative  py-10 '>
+        <div className='text-center relative px-3 py-0 md:py-10 '>
             <div className='relative z-10'>
                 <div className='flex justify-between px-10'>
                     <p className='App-logo font-semibold text-2xl'>+</p>
@@ -26,7 +26,7 @@ const HomeProjects = () => {
                 </div>
 
 
-                <div className='grid grid-cols-1 gap-10 justify-items-center ml-6 py-10 md:grid-cols-2 lg:grid-cols-3 px-2 md:mx-10'>
+                <div className='grid grid-cols-1 gap-0 md:gap-10 justify-items-center ml-0 md:ml-6 py-10 md:grid-cols-2 lg:grid-cols-3 px-2 md:mx-10'>
                     <div className='w-full col-span-2'>
                         {
                             isLoading ?
@@ -52,7 +52,7 @@ const HomeProjects = () => {
                         }
 
                     </div>
-                    <div className='grid gap-y-4 grid-cols-1'>
+                    <div className='grid gap-y-4  grid-cols-1 '>
                         {
                             isLoading ?
                                 <>

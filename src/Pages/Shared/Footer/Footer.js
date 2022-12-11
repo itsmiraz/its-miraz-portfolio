@@ -11,7 +11,7 @@ const Footer = () => {
              
 
 
-                <div className="container relative z-20 flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400">
+                <div className="container relative z-20 flex flex-col p-4  justify-between items-center md:p-8 lg:flex-row divide-gray-400">
                     <ul className="self-center font-semibold py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
 
                         <li>About</li>
@@ -50,7 +50,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='absolute bottom-0  right-0 z-10 blue-pink-gradient rounded-full w-[50%] h-[50%]'>
+                <div className='absolute bottom-0  right-0 z-10 blue__gradient rounded-full w-[70%] h-[70%]'>
 
                 </div>
             </footer>

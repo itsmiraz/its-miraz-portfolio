@@ -121,7 +121,7 @@
 .background_glow {
   width: 100wh;
   
-  filter: blur(200px);
+  filter: blur(100px);
   color: #fff;
   background: linear-gradient(-45deg, rgba(68, 183, 250, 0.952), hsl(347, 100%, 49%), rgb(170, 43, 255), #ff019d);
   background-size: 400% 400%;

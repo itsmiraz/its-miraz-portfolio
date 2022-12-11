@@ -21,14 +21,14 @@ const ContactForm = () => {
 
     return (
 
-        <div id='contact' className='relative z-20 my-20'>
+        <div id='contact' className='relative z-20  my-20'>
             <form ref={form} onSubmit={sendEmail} className="container text-white flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
 
-                <fieldset className="grid md:grid-cols-2  grid-cols-1 px-20 gap-6 p-6 rounded-md shadow-sm ">
-                    <div className="flex flex-col items-center justify-center ">
-                        <div>
+                <fieldset className="grid md:grid-cols-2  grid-cols-1 px-4 md:px-20 gap-6 p-2 md:p-6 rounded-md shadow-sm ">
+                    <div className="flex overflow-hidden flex-col items-center justify-center ">
+                        <div className='px-4'>
                             <h1 className='text-4xl font-semibold'>Contact Me?</h1>
-                            <p className='w-96 my-4'>Feel free to send me any message about me or wanna hire me or need any help in your project. I will reply you as soon as possible. Please enter a valid emal so that I can contact you. </p>
+                            <p className='w-full md:w-96 my-4'>Feel free to send me any message about me or wanna hire me or need any help in your project. I will reply you as soon as possible. Please enter a valid emal so that I can contact you. </p>
 
                         </div>
                     </div>
