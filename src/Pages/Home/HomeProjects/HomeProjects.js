@@ -50,13 +50,13 @@ const HomeProjects = () => {
                                     }
                                 </>
                         }
-                       
+
                     </div>
                     <div className='grid gap-y-4 grid-cols-1'>
                         {
                             isLoading ?
                                 <>
-                                 
+
                                     <div className="flex flex-col  rounded shadow-md  w-96  animate-pulse h-72">
                                         <div className="h-48 rounded-t dark:bg-gray-700"></div>
                                         <div className="flex-1 px-4 py-8 space-y-4 sm:p-8 dark:bg-gray-900">
@@ -89,12 +89,14 @@ const HomeProjects = () => {
                                     }
                                 </>
                         }
-                          
+
                     </div>
                 </div>
                 <div className='flex justify-between px-10'>
                     <p className='App-logo font-semibold text-2xl'>+</p>
-                    <Link to='/projects'> <button className='btn'>Show All</button></Link>
+                    <Link to='/projects'>
+                        <button className='my-4 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-purple-600 to-blue-500 text-white'>Show ALL</button>
+                    </Link>
                     <p className='App-logo font-semibold text-2xl'>+</p>
                 </div>
 

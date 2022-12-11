@@ -8,8 +8,8 @@ const SmallProjectCard = ({ project }) => {
 
     return (
         <div >
-            <div  className=" rounded  bg-slate-900  shadow-2xl ">
-                <div className='cards h-[150px] '><span className='inner'>
+            <div  className=" rounded  bg-[#000916]  shadow-2xl ">
+                <div className='cards h-[170px] '><span className='inner'>
                     <img className='scale-100 rounded'  src={image_url} alt="Shoes" />
                 </span></div>
                 <div className='p-4'>
@@ -20,13 +20,14 @@ const SmallProjectCard = ({ project }) => {
                
                 <div className='text-start text-white flex justify-between'>
                     <Link to={`/projects/${_id}`}>
-                        <button type="button" className="px-4 mr-4 py-1 font-semibold rounded border-gray-500 border">Details</button>
+                        <button type="button" className="px-4 mr-4 py-1 font-semibold  rounded bg-gradient-to-r from-indigo-600 to-pink-600 text-white">Details</button>
 
 
                     </Link>
                     <a rel="noreferrer" target='_blank' href={live_web}>
-                        <button type="button" className="px-4 mr-4 py-1 font-semibold rounded bg-gray-700 ">Live Web</button>
-                    </a>
+                        <button type="button" className="px-4 mr-4 py-1 font-semibold rounded bg-gradient-to-r from-indigo-600 to-pink-600 text-white">Live Web</button>
+                   
+                        </a>
                 </div>
                 </div>
             </div>

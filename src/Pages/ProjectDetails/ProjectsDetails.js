@@ -29,7 +29,7 @@ const ProjectsDetails = () => {
                         <PhotoProvider>
                             {screenshots.map((item, index) => (
                                 <PhotoView key={index} src={item}>
-                                    {index < 3 ? <img className='object-cover w-32 h-24 shadow-xl  object-center  rounded-md ' src={item} alt="" /> : undefined}
+                                    {index < 3 ? <img className='object-cover w-32 h-24 shadow-xl  object-center  rounded-b-lg ' src={item} alt="" /> : undefined}
                                 </PhotoView>
                             ))}
                         </PhotoProvider>

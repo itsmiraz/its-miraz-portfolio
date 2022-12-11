@@ -25,12 +25,13 @@ const HomeProjectsCard = ({ project }) => {
                 </div>
                 <div className='text-start text-white flex justify-between'>
                     <Link to={`/projects/${_id}`}>
-                        <button type="button" className="px-4 mr-4 py-1 font-semibold rounded border-gray-500 border">Details</button>
+                        <button type="button" className='my-4 px-5 py-2 rounded font-semibold bg-gradient-to-r from-indigo-600 to-pink-600 text-white  text-text-white'>Details</button>
 
 
                     </Link>
-                    <a rel="noreferrer" target='_blank' href={live_web}>
-                        <button type="button" className="px-4 mr-4 py-1 font-semibold rounded bg-gray-700 ">Live Web</button>
+                        <a rel="noreferrer" target='_blank' href={live_web}>
+                            
+                        <button type="button" className='my-4 px-4 py-2 rounded font-semibold bg-gradient-to-r from-fuchsia-600 to-blue-500 text-white'>Live Web</button>
                     </a>
                 </div>
                 </div>

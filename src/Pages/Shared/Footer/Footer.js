@@ -1,10 +1,13 @@
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import './footer.css'
+
+
 const Footer = () => {
     
     return (
         <div>
-            <footer className="header relative text-gray-50">
+            <footer className="footer relative text-gray-50">
              
 
 
