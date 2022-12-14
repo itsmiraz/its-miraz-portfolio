@@ -21,7 +21,7 @@ const HomeProjects = () => {
             <div className='relative z-10'>
                 <div className='flex justify-between px-10'>
                     <p className='App-logo font-semibold text-2xl'>+</p>
-                    <h1 className='text-4xl font-bold text-white'>My Recent Projects</h1>
+                    <h1 className='text-2xl md:text-4xl font-bold text-white'>My Recent Projects</h1>
                     <p className='App-logo font-semibold text-2xl'>+</p>
                 </div>
 

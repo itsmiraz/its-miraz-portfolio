@@ -55,7 +55,7 @@ const ProjectsDetails = () => {
                             }
                         </div>
                     </div>
-                    <div className='flex  border-none relative  justify-between my-6'>
+                    <div className='flex  border-none   justify-between my-6'>
 
                         <div className={` ${ButtnCss.btn}`}>
                             <a rel='noreferrer' target='_blank' href={live_web}>

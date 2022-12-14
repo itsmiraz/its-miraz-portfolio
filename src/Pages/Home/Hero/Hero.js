@@ -19,11 +19,11 @@ const Hero = () => {
             <div className='text-center z-10 relative  py-8 '>
                 <h1 className='text-6xl text-white font-bold'>Assalamu <span className='text-cyan-400'>Alaikum!</span></h1>
                 <h3 className='text-2xl text-white font-semibold my-2 '>Welcome to my Web World</h3>
-                <h3 className='md:text-4xl text-3xl flex mx-auto justify-center font-bold text-white'><span className='mx-3'>I am a</span> <Typewriter
+                <h3 className='md:text-4xl text-2xl flex mx-auto justify-center font-bold text-white'><span className='mx-3'>I am a</span> <Typewriter
 
                     options={{
 
-                        strings: ['React JS Developer', 'PhotoGrapher', 'Cinematographer', 'Graphic Disgner'],
+                        strings: ['React JS Developer', 'Front End Developer', 'Mern Stack Developer', 'Graphic Disgner'],
                         autoStart: true,
                         loop: true,
                     }}
@@ -33,10 +33,10 @@ const Hero = () => {
                     <button className='my-4 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white'>Download My Resume</button>
                 </Link>
                 <div className='flex justify-center'>
-                    <img className='w-96 mb-10' src={heroImg} alt="" />
+                    <img className='w-96 mb-10' src='https://i.ibb.co/5sVPCRW/portofolio-image-min.png' alt="" />
                 </div>
             </div>
-            <div className='backdrop-blur-lg   box-shadow  bg-gradient-to-t from-fuchsia-600 to-blue-500 md:w-10 w-72 h-12 md:h-72 absolute left-0 md:left-0 bottom-0 md:top-40 rounded-r-lg'>
+            <div className='backdrop-blur-lg   box-shadow  bg-gradient-to-r md:bg-gradient-to-t from-fuchsia-800 to-blue-800 md:w-10 w-72 h-12 md:h-72 absolute left-0 md:left-0 bottom-0 md:top-40 rounded-r-lg'>
 
             <div className="flex flex-row md:flex-col gap-x-5 items-center gap-y-0 md:gap-y-5 justify-center">
                             <a target={'_blank'} rel="noreferrer"   href="https://www.linkedin.com/in/mirajhossen/" title="Twitter" className="flex items-center justify-center w-12 h-12 rounded-full sm:w-10 sm:h-10   text-gray-100">

@@ -22,7 +22,7 @@ const ContactForm = () => {
     return (
 
         <div id='contact' className='relative z-20  my-20'>
-            <form ref={form} onSubmit={sendEmail} className="container text-white flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
+            <form ref={form} onSubmit={sendEmail} className="container relative z-20 text-white flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
 
                 <fieldset className="grid md:grid-cols-2  grid-cols-1 px-4 md:px-20 gap-6 p-2 md:p-6 rounded-md shadow-sm ">
                     <div className="flex overflow-hidden flex-col items-center justify-center ">
@@ -59,8 +59,10 @@ const ContactForm = () => {
 
 
             </form>
+            <div className='absolute top-0 left-0-0 z-1 white_bg rounded-full w-[40%] h-[40%]'>
 
-        <ScrollRestoration></ScrollRestoration>
+            </div>
+            <ScrollRestoration></ScrollRestoration>
         </div>
     );
 };
