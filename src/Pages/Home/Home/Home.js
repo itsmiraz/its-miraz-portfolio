@@ -4,6 +4,7 @@ import AboutMe from '../../AboutMe/AboutMe';
 import ContactForm from '../ContactForm/ContactForm';
 import Hero from '../Hero/Hero';
 import HomeProjects from '../HomeProjects/HomeProjects';
+import Skills from '../Skills/Skills';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero></Hero>
             <HomeProjects></HomeProjects>
             <AboutMe></AboutMe>
+            <Skills></Skills>
             <ContactForm></ContactForm>
             <ScrollRestoration></ScrollRestoration>
         </div>

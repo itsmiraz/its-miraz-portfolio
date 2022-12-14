@@ -59,7 +59,7 @@ const ContactForm = () => {
 
 
             </form>
-            <div className='absolute top-0 left-0-0 z-1 white_bg rounded-full w-[40%] h-[40%]'>
+            <div className='absolute top-0 left-0-0 z-0 white_bg rounded-full w-[40%] h-[40%]'>
 
             </div>
             <ScrollRestoration></ScrollRestoration>
