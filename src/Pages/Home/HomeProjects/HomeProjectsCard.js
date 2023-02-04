@@ -18,7 +18,7 @@ const HomeProjectsCard = ({ project }) => {
                         <h1 className='font-semibold text-start text-xl my-2  text-white' >Features</h1>
                         <ul >
                             {
-                                features.map((fea, i) => <ol key={i} className='text-start'>- {fea}</ol>)
+                                features?.map((fea, i) => <ol key={i} className='text-start'>- {fea}</ol>)
                             }
                         </ul>
                     </div>

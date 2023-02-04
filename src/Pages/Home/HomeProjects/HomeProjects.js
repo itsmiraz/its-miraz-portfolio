@@ -93,11 +93,16 @@ const HomeProjects = () => {
                     </div>
                 </div>
                 <div className='flex justify-between px-10'>
-                    <p className='App-logo font-semibold text-2xl'>+</p>
+                    <div>
+                        <p className='App-logo font-semibold text-2xl'>+</p>
+                    </div>
                     <Link to='/projects'>
                         <button className='my-4 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-purple-600 to-blue-500 text-white'>Show ALL</button>
                     </Link>
-                    <p className='App-logo font-semibold text-2xl'>+</p>
+                    <div>
+                        <p className='App-logo font-semibold text-2xl'>+</p>
+
+                    </div>
                 </div>
 
             </div>

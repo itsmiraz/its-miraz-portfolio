@@ -17,7 +17,7 @@ const ProjectsDetails = () => {
             <div className='z-20 relative'>
             <h2 className='text-4xl text-white font-bold text-center py-6'>Project Details</h2>
             <div className='grid  grid-cols-1 md:grid-cols-2 gap-10 py-4 '>
-                <div data-aos-duration="10000" data-aos="fade-right">
+                <div data-aos-duration="10000" data-aos="fade-bottom">
                     <div className=' md:h-[400px] overflow-hidden my-4 cards'>
                         <span className=' md:inner'>
 
@@ -36,7 +36,7 @@ const ProjectsDetails = () => {
                     </div>
                 </div>
 
-                <div data-aos-duration="10000" data-aos="fade-left">
+                <div data-aos-duration="10000" data-aos="fade-bottom">
                     <h1 className='text-4xl font-bold text-white'>{title}</h1>
                     <div className='my-4'>
                         <h1 className='font-semibold text-xl my-2  text-white' >Features</h1>

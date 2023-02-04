@@ -130,11 +130,8 @@ const Projects = () => {
                             </>
                     }
                 </div>
-                <div className='flex justify-between px-10'>
-                    <p className='App-logo font-semibold text-2xl'>+</p>
-
-                    <p className='App-logo font-semibold text-2xl'>+</p>
-                </div>
+               
+                    
 
             </div>
             <div className='absolute top-32  left-0 z-10 white_bg rounded-full w-[40%] h-[40%]'>
